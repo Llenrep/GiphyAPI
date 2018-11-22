@@ -28,6 +28,13 @@ $("button").on("click", function(){
 
             $("#gifsGoHere").prepend(gifDiv);        
         }
-    
     })  
+})
+
+$("#Submit").on("click", function(){
+    console.log("this works");
+    event.preventDefault();
+
+    newArtist = $("#actualArtist").val();
+    newButton = $("#gifButtons").html("<button><ins>" + newArtist + "</ins></button>")
 })
